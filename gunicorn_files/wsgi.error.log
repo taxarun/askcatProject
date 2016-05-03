@@ -1,0 +1,207 @@
+[2016-05-03 18:36:49 +0300] [1530] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 18:36:49 +0300] [1530] [INFO] Listening at: http://127.0.0.1:8080 (1530)
+[2016-05-03 18:36:49 +0300] [1530] [INFO] Using worker: sync
+[2016-05-03 18:36:49 +0300] [1534] [INFO] Booting worker with pid: 1534
+[2016-05-03 18:36:50 +0300] [1535] [INFO] Booting worker with pid: 1535
+[2016-05-03 18:36:50 +0300] [1536] [INFO] Booting worker with pid: 1536
+[2016-05-03 18:36:50 +0300] [1537] [INFO] Booting worker with pid: 1537
+[2016-05-03 18:37:28 +0300] [1530] [INFO] Handling signal: int
+[2016-05-03 15:37:28 +0000] [1534] [INFO] Worker exiting (pid: 1534)
+[2016-05-03 15:37:28 +0000] [1535] [INFO] Worker exiting (pid: 1535)
+[2016-05-03 15:37:28 +0000] [1536] [INFO] Worker exiting (pid: 1536)
+[2016-05-03 15:37:28 +0000] [1537] [INFO] Worker exiting (pid: 1537)
+[2016-05-03 18:37:28 +0300] [1530] [INFO] Shutting down: Master
+[2016-05-03 18:55:39 +0300] [1588] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 18:55:39 +0300] [1588] [INFO] Listening at: http://127.0.0.1:8080 (1588)
+[2016-05-03 18:55:39 +0300] [1588] [INFO] Using worker: sync
+[2016-05-03 18:55:39 +0300] [1592] [INFO] Booting worker with pid: 1592
+[2016-05-03 18:55:39 +0300] [1593] [INFO] Booting worker with pid: 1593
+[2016-05-03 18:55:39 +0300] [1594] [INFO] Booting worker with pid: 1594
+[2016-05-03 18:55:39 +0300] [1595] [INFO] Booting worker with pid: 1595
+[2016-05-03 19:14:26 +0300] [1588] [INFO] Handling signal: hup
+[2016-05-03 19:14:26 +0300] [1588] [INFO] Hang up: Master
+[2016-05-03 19:14:26 +0300] [1588] [INFO] Unhandled exception in main loop:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 199, in run
+    handler()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 230, in handle_hup
+    self.reload()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 390, in reload
+    self.app.reload()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 61, in reload
+    self.do_load_config()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 38, in do_load_config
+    print("\nError: %s" % str(e), file=sys.stderr)
+IOError: [Errno 5] Input/output error
+
+[2016-05-03 19:30:54 +0300] [627] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 19:30:54 +0300] [627] [INFO] Listening at: http://127.0.0.1:8080 (627)
+[2016-05-03 19:30:54 +0300] [627] [INFO] Using worker: sync
+[2016-05-03 19:30:54 +0300] [631] [INFO] Booting worker with pid: 631
+[2016-05-03 19:30:54 +0300] [632] [INFO] Booting worker with pid: 632
+[2016-05-03 19:30:54 +0300] [633] [INFO] Booting worker with pid: 633
+[2016-05-03 19:30:54 +0300] [634] [INFO] Booting worker with pid: 634
+[2016-05-03 19:33:54 +0300] [627] [INFO] Handling signal: winch
+[2016-05-03 19:34:07 +0300] [627] [INFO] Handling signal: int
+[2016-05-03 16:34:07 +0000] [632] [INFO] Worker exiting (pid: 632)
+[2016-05-03 16:34:07 +0000] [631] [INFO] Worker exiting (pid: 631)
+[2016-05-03 16:34:07 +0000] [634] [INFO] Worker exiting (pid: 634)
+[2016-05-03 16:34:07 +0000] [633] [INFO] Worker exiting (pid: 633)
+[2016-05-03 19:34:07 +0300] [627] [INFO] Shutting down: Master
+[2016-05-03 19:52:08 +0300] [452] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 19:52:08 +0300] [452] [INFO] Listening at: http://127.0.0.1:8080 (452)
+[2016-05-03 19:52:08 +0300] [452] [INFO] Using worker: sync
+[2016-05-03 19:52:08 +0300] [456] [INFO] Booting worker with pid: 456
+[2016-05-03 19:52:08 +0300] [456] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named askcat.wsgi
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named askcat.wsgi
+[2016-05-03 19:52:08 +0300] [456] [INFO] Worker exiting (pid: 456)
+[2016-05-03 19:52:08 +0300] [452] [INFO] Shutting down: Master
+[2016-05-03 19:52:08 +0300] [452] [INFO] Reason: Worker failed to boot.
+[2016-05-03 19:52:11 +0300] [457] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 19:52:11 +0300] [457] [INFO] Listening at: http://127.0.0.1:8080 (457)
+[2016-05-03 19:52:11 +0300] [457] [INFO] Using worker: sync
+[2016-05-03 19:52:11 +0300] [461] [INFO] Booting worker with pid: 461
+[2016-05-03 19:52:11 +0300] [461] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named askcat.wsgi
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named askcat.wsgi
+[2016-05-03 19:52:11 +0300] [461] [INFO] Worker exiting (pid: 461)
+[2016-05-03 19:52:11 +0300] [457] [INFO] Shutting down: Master
+[2016-05-03 19:52:11 +0300] [457] [INFO] Reason: Worker failed to boot.
+[2016-05-03 19:52:57 +0300] [516] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 19:52:57 +0300] [516] [INFO] Listening at: http://127.0.0.1:8080 (516)
+[2016-05-03 19:52:57 +0300] [516] [INFO] Using worker: sync
+[2016-05-03 19:52:57 +0300] [520] [INFO] Booting worker with pid: 520
+[2016-05-03 19:52:57 +0300] [523] [INFO] Booting worker with pid: 523
+[2016-05-03 19:52:57 +0300] [524] [INFO] Booting worker with pid: 524
+[2016-05-03 19:52:57 +0300] [525] [INFO] Booting worker with pid: 525
+[2016-05-03 17:00:24 +0000] [524] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 187, in handle_request
+    six.reraise(exc_info[0], exc_info[1], exc_info[2])
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 177, in handle_request
+    resp.write(item)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/http/wsgi.py", line 347, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 302, in write
+    sock.sendall(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 41] Protocol wrong type for socket
+[2016-05-03 17:00:53 +0000] [523] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 187, in handle_request
+    six.reraise(exc_info[0], exc_info[1], exc_info[2])
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 177, in handle_request
+    resp.write(item)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/http/wsgi.py", line 347, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 302, in write
+    sock.sendall(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 41] Protocol wrong type for socket
+[2016-05-03 20:05:52 +0300] [516] [INFO] Handling signal: int
+[2016-05-03 17:05:52 +0000] [523] [INFO] Worker exiting (pid: 523)
+[2016-05-03 17:05:52 +0000] [524] [INFO] Worker exiting (pid: 524)
+[2016-05-03 17:05:52 +0000] [525] [INFO] Worker exiting (pid: 525)
+[2016-05-03 17:05:52 +0000] [520] [INFO] Worker exiting (pid: 520)
+[2016-05-03 20:05:52 +0300] [516] [INFO] Shutting down: Master
+[2016-05-03 20:05:54 +0300] [4467] [INFO] Starting gunicorn 19.4.5
+[2016-05-03 20:05:54 +0300] [4467] [INFO] Listening at: http://127.0.0.1:8080 (4467)
+[2016-05-03 20:05:54 +0300] [4467] [INFO] Using worker: sync
+[2016-05-03 20:05:54 +0300] [4471] [INFO] Booting worker with pid: 4471
+[2016-05-03 20:05:54 +0300] [4472] [INFO] Booting worker with pid: 4472
+[2016-05-03 20:05:54 +0300] [4473] [INFO] Booting worker with pid: 4473
+[2016-05-03 20:05:54 +0300] [4474] [INFO] Booting worker with pid: 4474
+[2016-05-03 17:06:00 +0000] [4471] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 187, in handle_request
+    six.reraise(exc_info[0], exc_info[1], exc_info[2])
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/workers/sync.py", line 177, in handle_request
+    resp.write(item)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/http/wsgi.py", line 347, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/Library/Python/2.7/site-packages/gunicorn-19.4.5-py2.7.egg/gunicorn/util.py", line 302, in write
+    sock.sendall(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 41] Protocol wrong type for socket
+[2016-05-03 20:27:36 +0300] [4467] [CRITICAL] WORKER TIMEOUT (pid:4472)
+[2016-05-03 20:27:36 +0300] [4467] [CRITICAL] WORKER TIMEOUT (pid:4473)
+[2016-05-03 20:27:36 +0300] [4467] [CRITICAL] WORKER TIMEOUT (pid:4474)
+[2016-05-03 20:27:36 +0300] [4467] [CRITICAL] WORKER TIMEOUT (pid:4471)
+[2016-05-03 17:27:36 +0000] [4472] [INFO] Worker exiting (pid: 4472)
+[2016-05-03 17:27:36 +0000] [4473] [INFO] Worker exiting (pid: 4473)
+[2016-05-03 17:27:36 +0000] [4474] [INFO] Worker exiting (pid: 4474)
+[2016-05-03 17:27:36 +0000] [4471] [INFO] Worker exiting (pid: 4471)
+[2016-05-03 20:27:36 +0300] [4479] [INFO] Booting worker with pid: 4479
+[2016-05-03 20:27:36 +0300] [4480] [INFO] Booting worker with pid: 4480
+[2016-05-03 20:27:36 +0300] [4481] [INFO] Booting worker with pid: 4481
+[2016-05-03 20:27:36 +0300] [4482] [INFO] Booting worker with pid: 4482

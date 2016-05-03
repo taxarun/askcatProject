@@ -1,0 +1,106 @@
+NGINX result
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        nginx/1.8.1
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /hello.html
+Document Length:        274 bytes
+
+Concurrency Level:      200
+Time taken for tests:   0.521 seconds
+Complete requests:      10000
+Failed requests:        0
+Keep-Alive requests:    10000
+Total transferred:      5110000 bytes
+HTML transferred:       2740000 bytes
+Requests per second:    19191.35 [#/sec] (mean)
+Time per request:       10.421 [ms] (mean)
+Time per request:       0.052 [ms] (mean, across all concurrent requests)
+Transfer rate:          9576.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      12
+Processing:     2   10   2.5      9      20
+Waiting:        2   10   2.5      9      20
+Total:          3   10   2.3      9      20
+
+Percentage of the requests served within a certain time (ms)
+  50%      9
+  66%     11
+  75%     12
+  80%     12
+  90%     13
+  95%     15
+  98%     16
+  99%     17
+ 100%     20 (longest request)
+
+Gunicorn result (WSGI)
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        nginx/1.8.1
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /hello
+Document Length:        537 bytes
+
+Concurrency Level:      200
+Time taken for tests:   0.534 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Keep-Alive requests:    10000
+Total transferred:      7150000 bytes
+HTML transferred:       5370000 bytes
+Requests per second:    18709.28 [#/sec] (mean)
+Time per request:       10.690 [ms] (mean)
+Time per request:       0.053 [ms] (mean, across all concurrent requests)
+Transfer rate:          13063.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.2      0      13
+Processing:     2   10   2.9     10      24
+Waiting:        2   10   2.9     10      24
+Total:          6   11   2.8     10      24
+
+Percentage of the requests served within a certain time (ms)
+  50%     10
+  66%     11
+  75%     12
+  80%     12
+  90%     14
+  95%     15
+  98%     19
+  99%     22
+ 100%     24 (longest request)
